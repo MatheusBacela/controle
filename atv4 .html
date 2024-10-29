@@ -1,0 +1,35 @@
+<!-- Alterar Estilo do Primeiro Parágrafo:
+Crie uma página HTML com vários parágrafos. 
+Utilize querySelector para selecionar o primeiro parágrafo 
+e alterar sua cor de fundo para amarelo. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>primeiro parágrafo</p>
+    <p>segundo parágrafo</p>
+    <p>terceiro parágrafo</p>
+
+    <button id="botao" onclick="trocarCor()">trocar</button>
+
+    <script>
+
+        function trocarCor(){ 
+
+            document.querySelector('p').style.backgroundColor="yellow";  
+        }
+
+        // document.getElementById('alterar').addEventListener('click', function() {
+        //     document.querySelector('p').style.backgroundColor = 'yellow';
+        // });
+   
+
+    </script>
+</body>
+
+</html>

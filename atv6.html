@@ -1,0 +1,26 @@
+<!-- Crie uma página HTML com vários elementos de classe destacado. 
+Use querySelector para selecionar o primeiro elemento com esta 
+classe e alterar seu conteúdo para "Texto destacado". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="num">1</div>
+   <div class="num">2</div>
+   <div class="num">3</div>
+
+   <button id="botao">trocar</button>
+
+   <script>
+    document.getElementById('botao').addEventListener('click' , function(){
+        const numero = document.querySelector('.num');
+        numero.textContent="texto destacado";
+    } )
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- Crie uma página HTML com um botão. Ao clicar no botão, 
+utilize createElement para criar um novo parágrafo e adicioná-lo ao final do corpo do 
+documento com o texto "Novo parágrafo adicionado -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botao">trocar</button>
+
+    <script>
+        document.getElementById('botao').addEventListener('click' , function(){
+        const adicionar= document.createElement('p');
+        adicionar.textContent='Novo parágrafo adicionado';
+        document.body.appendChild(adicionar);
+        
+        })
+    </script>
+</body>
+</html>

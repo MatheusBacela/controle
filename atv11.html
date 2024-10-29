@@ -1,0 +1,28 @@
+<!-- Alterar Estilo de Todos os Parágrafos:
+Crie uma página HTML com vários parágrafos. Utilize getElementsByTagName para 
+selecionar todos os parágrafos e alterar sua cor de fundo para cinza. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <button id="botao">mudar</button>
+
+    <script>
+        document.getElementById("botao").addEventListener('click', function(){
+            let todos = document.getElementsByTagName('p');
+            for(let i= 0; i < todos.length; i++){
+                todos[i].style.backgroundColor="blue"
+            }
+        })
+
+    </script>
+</body>
+</html>

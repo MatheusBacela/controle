@@ -1,0 +1,43 @@
+<!-- Crie uma página HTML com um botão. 
+Ao clicar no botão, utilize createElement para criar uma 
+lista não ordenada (<ul>) 
+com três itens (<li>) e adicione a lista ao corpo do documento. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botao" onclick="chamarlista()">BORA</button>
+
+    <!-- <script>
+            function chamarlista(){
+            var criacao =document.createElement('ul');
+            var lista = document.createElement('li');
+            lista.textContent='uva, maça, laranja';
+            criacao.appendChild(lista);
+            document.body.appendChild(criacao);
+        }
+    </script> -->
+    
+
+    <script>
+        function chamarlista(){
+            let lista = document.createElement('ul');
+            for (let i = 1; i <=3; i++){
+                let item = document.createElement('li');
+                item.textContent= "fruta" + i;
+                lista.appendChild(item);
+            }
+            document.body.appendChild(lista);
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+

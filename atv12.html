@@ -1,0 +1,32 @@
+<!-- Crie uma página HTML com vários cabeçalhos (<h1>, <h2>, etc.).
+Use getElementsByTagName para selecionar todos os cabeçalhos e 
+adicionar o texto " - Atualizado" ao final de cada um. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>oi</h1>
+    <h2>tudo</h2>
+    <h3>bem</h3>
+    <button id="botao">adicionar</button>
+
+    <script>
+        document.getElementById("botao").addEventListener('click', function(){
+            
+            for(let i= 1; i <= 3; i++ ){
+                let todos= document.getElementsByTagName("h" + i);
+                for( let l= 0; l < todos.length; l++){
+                    todos[l].textContent= "atualizado"; 
+                
+                }
+
+            }
+        })
+
+    </script>
+</body>
+</html>

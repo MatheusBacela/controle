@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function lancarDado(){
+            return Math.floor(Math.random() * 6) + 1;
+        }
+        function parOuImpar(num){
+            return num % 2 === 0 ? 'par' : 'impar';
+        }
+        let x= true
+
+        while(x){
+           const numero1 = parseInt(prompt("Escolha um numero"));
+           const escolha = prompt("Par ou impar?").toLowerCase();
+
+           if(escolha !== "par" && escolha !== "impar"){
+            console.log("escolha invalida");  
+            break;         
+           }
+           const computador = lancarDado();
+           console.log("Voce escolheu o numero " + numero1 );
+           console.log("O computador escolheu o numero " + computador);
+
+           const resultado = parOuImpar(computador + numero1);
+           
+           if(escolha == resultado){
+            console.log("voce ganhou");
+           }            
+           else{
+            console.log("voce perdeu");            
+           }    
+           var continuar = prompt("Deseja continuar jogando? (sim ou não) ").toLowerCase();
+           if(continuar == "sim"){
+            x=true
+           }
+           else{
+            x=false
+           }
+           }
+
+
+
+                    
+
+        
+
+
+
+    </script>
+
+</body>
+</html>

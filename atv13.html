@@ -1,0 +1,138 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colorbox {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox">Passe o mouse aqui!</div>
+    <script src="atv7.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript</title>
+</head>
+<body>
+    <h1>Exercícios de JavaScript</h1>
+
+    <!-- 1. Tabuada -->
+    <h2>1. Tabuada</h2>
+    <label for="numero">Digite um número para ver a tabuada:</label>
+    <input type="number" id="numero" />
+    <button onclick="tabuada()">Ver Tabuada</button>
+    <pre id="resultadoTabuada"></pre>
+
+    <script>
+        function tabuada(){
+            let num= document.getElementById('numero').value;
+            let resultado = ""
+            for (let i= 1; i <= 10; i++){
+                resultado += num +"x"+ i + "=" + num*i + "<br>";
+            }
+
+            document.getElementById("resultadoTabuada").innerHTML=resultado;
+
+        }
+    </script>
+
+    <!-- 2. Números pares em uma lista -->
+    <h2>2. Números Pares em uma Lista</h2>
+    <button onclick="numerosPares()">Ver Números Pares</button>
+    <pre id="resultadoPares"></pre>
+
+    <script>
+        function numerosPares(){
+            let num= [1,2,3,4,5,6,7,8,9,10]
+            let pares= num.filter(numero => numero %2 === 0)
+            document.getElementById("resultadoPares").innerHTML=pares;
+        }
+    </script>
+
+    <!-- 3. Nomes que começam com V -->
+    <h2>3. Nomes que começam com a letra V</h2>
+    <button onclick="nomesComV()">Ver Nomes</button>
+    <pre id="resultadoNomesV"></pre>
+
+    <script>
+        function nomesComV(){
+            let grupo= ["Gabi","Matheus","Dany","Vitoria","Valeria"];
+            // let mai= grupo.toUpperCase();
+            let nV= grupo.filter(nomes => nomes.startsWith("V"));
+            document.getElementById("resultadoNomesV").innerHTML=nV;
+        }
+    </script>
+
+    <!-- 4. Números pares entre 10 e 50 -->
+    <h2>4. Números Pares entre 10 e 50</h2>
+    <button onclick="preencherPares()">Ver Pares</button>
+    <pre id="resultadoParesIntervalo"></pre>
+
+    <script>
+        function preencherPares(){
+            let matriz = []
+            for(let i= 10; i<= 50; i++){
+                if(i %2 === 0){
+                    matriz.push(i);
+                } 
+            }
+            document.getElementById("resultadoParesIntervalo").innerHTML=matriz;
+        }
+    </script>
+
+    <!-- 5. Médias de recuperação -->
+    <h2>5. Médias de Recuperação (menor que 5)</h2>
+    <button onclick="mediasRecuperacao()">Ver Médias</button>
+    <pre id="resultadoMediasRec"></pre>
+
+    <script>
+        function mediasRecuperacao(){
+            let notas = [1,2,3,4,5,6,7,8,9,]
+            let media= notas.filter(numero => numero <5);
+            
+            document.getElementById("resultadoMediasRec").innerHTML=media;
+        }
+    </script>
+
+    <!-- 6. Maior nota -->
+    <h2>6. Maior Nota</h2>
+    <button onclick="maiorNota()">Ver Maior Nota</button>
+    <pre id="resultadoMaiorNota"></pre>
+
+    <script>
+      
+    </script>
+</body>
+</html>
+<!-- 
+
+1) Crie um programa que dado um número imprima a sua tabuada.
+
+2) Crie um programa que seja capaz de percorrer uma lista de números e imprima cada número Par encontrado.
+
+3) Faça um programa que dado uma lista de nomes imprima os nomes que começem com a letra "V".
+
+4) Faça um programa que preencha uma lista com todos os números pares contidos no intervalo de 10 a 50;
+
+5) Dado uma lista com as médias tiradas pelos alunos. Imprima todas as médias que ficaram de recuperação (média < 5).
+   Ex de lista = [2, 7, 3, 8, 10, 4]
+
+6) Dado uma lista com as notas tiradas pelos alunos. imprima a maior nota.

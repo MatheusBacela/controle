@@ -1,0 +1,7 @@
+https://www.canva.com/design/DAGJ1tQ0gMw/OyYE3UXzRph5OkqCLHPelw/view?utm_content=DAGJ1tQ0gMw&utm_campaign=designshare&utm_medium=link&utm_source=editor#3
+
+https://www.canva.com/design/DAGKAy-PWHI/djIIqHnj_HrWE3KvkRX4KA/view?utm_content=DAGKAy-PWHI&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+13 - Crie uma página HTML com um formulário que possui vários campos de texto com o atributo name="campo". Use getElementsByName para selecionar todos esses campos e verificar se algum deles está vazio. Se estiver, altere a cor de fundo para vermelho. -->
+_______________________________________
+14 - Crie uma página HTML com um formulário que possui vários checkboxes com o atributo name="opcao". Utilize getElementsByName para selecionar todos os checkboxes e marcar todos como selecionados. -->
